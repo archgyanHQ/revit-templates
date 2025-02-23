@@ -40,15 +40,18 @@ jobs:
           echo "new_tag=$new_tag" >> $GITHUB_ENV
 
       - name: Create and Push New Git Tag
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/archgyanHQ/revit-templates.git
+          
           # Ensure tag is not duplicated
           if git rev-parse ${{ env.new_tag }} >/dev/null 2>&1; then
             echo "Tag ${{ env.new_tag }} already exists. Skipping tag creation."
             exit 0
           fi
-
+      
           git tag -a ${{ env.new_tag }} -m "Auto-generated tag from GitBook changes"
           git push origin ${{ env.new_tag }}
