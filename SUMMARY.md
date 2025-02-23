@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* [Projects](getting-started/quickstart.md)
+* [Revit Templates List](getting-started/quickstart.md)
 * [Publish your docs](getting-started/publish-your-docs.md)
 
 ## Basics

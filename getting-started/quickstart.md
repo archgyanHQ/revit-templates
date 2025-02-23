@@ -3,22 +3,11 @@ icon: bullseye-arrow
 description: Here are the list of templates being developed based on project typology.
 ---
 
-# Projects
+# Revit Templates List
 
 
 
-<table><thead><tr><th width="127">No.</th><th>Template Name</th><th>Typology</th><th>Status</th></tr></thead><tbody><tr><td>AG-01</td><td>AG-Residential</td><td>Residential Projects (small to Large)</td><td>WIP</td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="127">No.</th><th>Template Name</th><th>Typology</th><th>Status</th></tr></thead><tbody><tr><td>AG-01</td><td>AG-Residential</td><td>Residential Projects (small to Large)</td><td>WIP</td></tr><tr><td>AG-02</td><td>AG-Resorts</td><td>Resort Projects</td><td>TBC</td></tr><tr><td>AG-03</td><td>AG-Schools</td><td>School Projects</td><td>TBC</td></tr></tbody></table>
 
-Beautiful documentation starts with the content you create — and GitBook makes it easy to get started with any pre-existing content.
 
-{% hint style="info" %}
-Want to learn about writing content from scratch? Head to the [Basics](https://github.com/GitbookIO/onboarding-template/blob/main/getting-started/broken-reference/README.md) section to learn more.
-{% endhint %}
 
-### Import
-
-GitBook supports importing content from many popular writing tools and formats. If your content already exists, you can upload a file or group of files to be imported.
-
-### Sync a repository
-
-GitBook also allows you to set up a bi-directional sync with an existing repository on GitHub or GitLab. Setting up Git Sync allows you and your team to write content in GitBook or in code, and never have to worry about your content becoming out of sync.
