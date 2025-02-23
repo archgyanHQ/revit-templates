@@ -3,7 +3,7 @@ name: Auto-Tag from GitBook
 on:
   push:
     branches:
-      - main # Adjust if GitBook syncs to another branch
+      - main  # Adjust if GitBook syncs to another branch
 
 jobs:
   tag_release:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Ensure all tags are fetched
+          fetch-depth: 0  # Ensure all tags are fetched
 
       - name: Get Latest Tag
         id: get_latest_tag
@@ -52,6 +52,6 @@ jobs:
             echo "Tag ${{ env.new_tag }} already exists. Skipping tag creation."
             exit 0
           fi
-      
+
           git tag -a ${{ env.new_tag }} -m "Auto-generated tag from GitBook changes"
           git push origin ${{ env.new_tag }}
